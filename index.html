@@ -1,116 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Style Season by NAME HERE</title>
-		<meta charset="utf-8">
-		<meta name="robots" content="noindex,nofollow">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/default.css">
-		<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
-		<style>
-			.masthead{
-				font-family: 'Damion', cursive; /* required for google font */
-				font-size:3em;
-			}
-			
-			#logo{
-				float:right;
-				display:inline-block;
-				padding:2px;
-				max-width:100px; /* actual size of image */
-				width:20%; /* approximate size taken on screen in maximum view */
-			}
-			
-			#wear {
-				float:left;
-				display:inline-block;
-				padding:20px;
-				max-width:300px; /* actual size of image */
-				width:33%; /* approximate size taken on screen in maximum view */
-			}
-			
-			ul.colors{
-				display:inline-block;
-				margin-left:5%;
-				list-style-type: none;
-			}
-		</style>
-	</head>
-	<body>
-	<header>
-		<img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo">
-		<h1 class="masthead">Eddie Browser</h1>
-		<nav>
-			<ul>
-				<li class="seasons"><a href="Spring" onclick="changeSeason(this); return false;">Spring</a></li>
-				<li class="seasons"><a href="Summer" onclick="changeSeason(this); return false;">Summer</a></li>
-				<li class="seasons"><a href="Fall" onclick="changeSeason(this); return false;">Fall</a></li>
-				<li class="seasons"><a href="Winter" onclick="changeSeason(this); return false;">Winter</a></li>
-			</ul>
-		</nav>
-	</header>
-	 
-	<main class="wrapper">
-	<header><h2>Outfitter for All Seasons!</h2></header>
-	<div>
-		<p>The colors of the seasonal images are as follows:</p>
-		<ul class="colors">
-			<li>Spring: <b>#2B7129</b></li>
-			<li>Summer: <b>#EBA52B</b></li>
-			<li>Fall: <b>#A81124</b></li>
-			<li>Winter: <b>#005393</b></li>
-		</ul>
-	</div>
-	<p><strong>Replace some text here</strong> and add your explanation of how this page works and what it does</p>	
-	<p>
-	Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica 
-		single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. 
-		Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. 
-		Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. 
-		Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. 
-		Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
-	<img src="images/300x400.png" alt="Season Wear Goes Here" id="wear">
-	</p>
-	<p>
-	Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic 
-		flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch 
-		Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life, 
-		tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. 
-		Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
-	</p>
-	<p>
-	Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics 
-		tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache 
-		Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn 
-		paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth 
-		paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter 
-		migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel 
-		put a bird on it master cleanse.
-	</p>
-	<p>
-	Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
-	</p>
-	<footer>
-	<p><small>&copy; 2026 by 
-		NAME HERE, All Rights Reserved ~ 
-		<a id="html-checker" href="#">Check HTML</a> ~ 
-		<a id="css-checker" href="#">Check CSS</a></small>
-	</p>
-	</footer>
-	</main>
-	<script>
-		function changeSeason(el) {
-		    // 1. 'element' is the <a> tag that was just clicked
-		    // 2. Scoop the href attribute (e.g., "winter")
-		    var season = el.getAttribute("href");
-		
-		    // 3. Test the scoop!
-		    alert("The season is: " + season);
-		    
-		    // 4. Now you can use that 'season' variable to change pics/colors
-		    console.log("The season is: " + season);
-		}
-	</script>
-	<script src="js/main.js"></script>
-	</body>
+    <head>
+        <title>Style Season by John Nelson</title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/default.css">
+        <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet" type="text/css">
+        <style>
+            .masthead {
+                font-family: 'Damion', cursive;
+                font-size: 3em;
+            }
+
+            #logo {
+                float: right;
+                display: inline-block;
+                padding: 2px;
+                max-width: 100px;
+                width: 20%;
+            }
+
+            #wear {
+                float: left;
+                display: inline-block;
+                padding: 20px;
+                max-width: 300px;
+                width: 33%;
+            }
+
+            ul.colors {
+                display: inline-block;
+                margin-left: 5%;
+                list-style-type: none;
+            }
+
+            .season-explanation {
+                background-color: #f5f5f5;
+                padding: 1em;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="images/four-seasons.gif" alt="Four seasons logo" class="flexible" id="logo">
+            <h1 class="masthead">Eddie Browser</h1>
+
+            <nav>
+                <ul>
+                    <li class="seasons"><a href="Default" onclick="changeSeason(this); return false;">Default</a></li>
+                    <li class="seasons"><a href="Spring" onclick="changeSeason(this); return false;">Spring</a></li>
+                    <li class="seasons"><a href="Summer" onclick="changeSeason(this); return false;">Summer</a></li>
+                    <li class="seasons"><a href="Fall" onclick="changeSeason(this); return false;">Fall</a></li>
+                    <li class="seasons"><a href="Winter" onclick="changeSeason(this); return false;">Winter</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper">
+            <header>
+                <h2>Outfitter for All Seasons!</h2>
+            </header>
+
+            <div class="season-explanation">
+                <p>
+                    This page uses JavaScript to change the look and feel of the Eddie Browser page when a season is clicked.
+                    The script reads the season from the link, changes the page background color, updates the seasonal message,
+                    changes the logo image, and changes the clothing image. Clicking Default restores the original page settings.
+                </p>
+            </div>
+
+            <div>
+                <p>The colors of the seasonal images are as follows:</p>
+                <ul class="colors">
+                    <li>Spring: <b>#2B7129</b></li>
+                    <li>Summer: <b>#EBA52B</b></li>
+                    <li>Fall: <b>#A81124</b></li>
+                    <li>Winter: <b>#005393</b></li>
+                    <li>Default: <b>gray</b></li>
+                </ul>
+            </div>
+
+            <p>
+                Eddie Browser is a seasonal wear outfitter that changes with the weather. Choose a season above to see
+                the page update with a new color scheme, logo, clothing image, and seasonal message.
+            </p>
+
+            <p>
+                Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica
+                single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan.
+                Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub.
+                Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo.
+                Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress.
+                Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
+                <img src="images/300x400.png" alt="Seasonal clothing goes here" id="wear">
+            </p>
+
+            <p>
+                Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic
+                flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch
+                Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life,
+                tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap.
+                Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
+            </p>
+
+            <p>
+                Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics
+                tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache
+                Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn
+                paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth
+                paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter
+                migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel
+                put a bird on it master cleanse.
+            </p>
+
+            <p>
+                Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
+            </p>
+
+            <footer>
+                <p>
+                    <small>&copy; 2026 by John Nelson, All Rights Reserved ~
+                        <a id="html-checker" href="#">Check HTML</a> ~
+                        <a id="css-checker" href="#">Check CSS</a>
+                    </small>
+                </p>
+            </footer>
+        </main>
+
+        <script>
+            function changeSeason(el) {
+                // 1. "el" is the <a> tag that was just clicked
+                // 2. Scoop the href attribute, such as "Spring" or "Winter"
+                var season = el.getAttribute("href");
+                season = season.toLowerCase();
+
+                // 3. Select the parts of the page that will change
+                const html = document.querySelector("html");
+                const banner = document.querySelector("header > h2");
+                const logo = document.getElementById("logo");
+                const wear = document.getElementById("wear");
+
+                // 4. Change the page based on the selected season
+                switch (season) {
+                    case "spring":
+                        html.style.backgroundColor = "#2B7129";
+                        banner.textContent = "Spring Forward!";
+                        break;
+
+                    case "summer":
+                        html.style.backgroundColor = "#EBA52B";
+                        banner.textContent = "Slip into Summer!";
+                        break;
+
+                    case "fall":
+                        html.style.backgroundColor = "#A81124";
+                        banner.textContent = "Leap into our Fall Wear!";
+                        break;
+
+                    case "winter":
+                        html.style.backgroundColor = "#005393";
+                        banner.textContent = "Don't fall in winter!";
+                        break;
+
+                    default:
+                        html.style.backgroundColor = "gray";
+                        banner.textContent = "Outfitter for All Seasons!";
+                        season = "four-seasons";
+                        logo.src = "images/four-seasons.gif";
+                        wear.src = "images/300x400.png";
+                        console.log("The season is: default");
+                        return;
+                }
+
+                logo.src = "images/" + season + ".gif";
+                wear.src = "images/" + season + "-wear.jpg";
+
+                console.log("The season is: " + season);
+            }
+
+            // HTML/CSS validator links
+            document.addEventListener("DOMContentLoaded", function () {
+                var currentUrl = window.location.href;
+                document.getElementById("html-checker").href = "https://validator.w3.org/nu/?doc=" + encodeURIComponent(currentUrl);
+                document.getElementById("css-checker").href = "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(currentUrl);
+            });
+        </script>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
